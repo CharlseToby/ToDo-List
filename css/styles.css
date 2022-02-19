@@ -5,6 +5,20 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .container {
   padding: 10px;
   width: 380px;
@@ -63,8 +77,8 @@ body {
 /* ---------- THE CONTENT ---------- */
 .content {
   width: 380px;
-  height: 350px;
-  max-height: 350px;
+  min-height: 350px;
+  max-height: 500px;
   background-color: #fff;
   overflow-y: scroll;
 }
@@ -136,6 +150,7 @@ body {
   height: 40px;
   background-color: #fff;
   padding: 10px;
+  border-radius: 0 0 15px 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -193,4 +208,8 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: 20px;
 }
+
+/* @media only screen and (max-width: 400px) {
+  $mainWidth: 100vw;
+} */
 /*# sourceMappingURL=styles.css.map */
